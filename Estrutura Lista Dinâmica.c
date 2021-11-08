@@ -55,7 +55,7 @@ PONT buscaSeq(TIPOCHAVE ch, TANQUE *l){
 		if (pos->chave == ch) {
 			return pos;
     	}
-    pos = pos->prox;
+	pos = pos->prox;
 	}
 	return NULL;
 }
@@ -136,4 +136,4 @@ PONT retornarUltimo(TANQUE *l, TIPOCHAVE *ch){
 	}
 	*ch = ultimo->chave;
 	return ultimo;
-} 
+}
