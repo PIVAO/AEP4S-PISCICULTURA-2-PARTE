@@ -109,12 +109,12 @@ void menu() {
 		    case 7 : exibirPrimeiro(&Tanque); break;
 		    case 8 : exibirUltimo(&Tanque); break;
 		}
-    system("pause");
+	system("pause");
 	}
 }
 
 int main(){
-
+	system("color 0a");
 	menu();
 
 	return 0;
