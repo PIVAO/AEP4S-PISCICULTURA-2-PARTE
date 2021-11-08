@@ -18,6 +18,32 @@ void inserir(TANQUE *l){
 	}
 }
 
+void excluir(TANQUE *l){
+	TIPOCHAVE ch;
+	printf("Tanque a ser excluído: ");
+	scanf("%d",&ch);
+	if (excluirElemTanque(ch,l)) {
+		printf("Tanque %d excluído corretamente.\n",ch);
+	}
+	else {
+		printf("Não foi possível excluir o tanque %d.\n",ch);
+	}
+}
+
+void imprimir_elementos(TANQUE *l){
+	exibirTanque(l);
+}
+
+void destruir(TANQUE *l){
+     destruirTanque(l);
+     printf("Lista de tanques zerada.\n");
+}
+
+void exibir_detalhes_tanque(TANQUE *l){
+	printf("Número de tanques na lista: %d.\n",tamanho(l));
+	printf("Tamanho da lista (em bytes): %d.\n",tamanhoEmBytes(l));
+}
+
 void buscar(TANQUE *l){
 	TIPOCHAVE ch;
 	printf("Tanque a ser excluido: ");
@@ -51,32 +77,6 @@ void exibirUltimo(TANQUE *l){
 	else {
 		printf("Não foi possível encontrar o último tanque (lista vazia).\n");
 	}
-}
-
-void excluir(TANQUE *l){
-	TIPOCHAVE ch;
-	printf("Tanque a ser excluído: ");
-	scanf("%d",&ch);
-	if (excluirElemTanque(ch,l)) {
-		printf("Tanque %d excluído corretamente.\n",ch);
-	}
-	else {
-		printf("Não foi possível excluir o tanque %d.\n",ch);
-	}
-}
-
-void imprimir_elementos(TANQUE *l){
-	exibirTanque(l);
-}
-
-void exibir_detalhes_tanque(TANQUE *l){
-	printf("Número de tanques na lista: %d.\n",tamanho(l));
-	printf("Tamanho da lista (em bytes): %d.\n",tamanhoEmBytes(l));
-}
-
-void destruir(TANQUE *l){
-     destruirTanque(l);
-     printf("Lista de tanques zerada.\n");
 }
 
 void menu() {
