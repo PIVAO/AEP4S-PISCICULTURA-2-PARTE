@@ -95,7 +95,7 @@ void menu() {
 		printf("6 : Buscar tanque \n");
 		printf("7 : Exibir primeiro tanque \n");
 		printf("8 : Exibir último tanque \n");
-		printf("9 : SAIR \n");
+		printf("9 : SAIR \n\n");
 		printf("Digite a opção desejada: ");
 		scanf("%d",&opcao);
 		system("cls");
